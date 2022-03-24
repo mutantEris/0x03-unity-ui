@@ -48,4 +48,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("You win!");
         }
     }
+    void SetScoreText() => scoreText.text = $"Score: {score}";
+	void SetHealthText() => healthText.text = $"Health: {health}";
 }
