@@ -37,6 +37,10 @@ public class PlayerController : MonoBehaviour
         }
         float xDirection = Input.GetAxis("Horizontal");
         float zDirection = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.Escape))
+        {
+			SceneManager.LoadScene("menu");
+		}
 
         rb.velocity = new Vector3(xDirection, 0.0f, zDirection) * speed;
         // transform.position += moveDirection * speed;
