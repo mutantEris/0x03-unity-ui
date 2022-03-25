@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu1 : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public void PlayMaze()
     {
@@ -13,5 +13,6 @@ public class MainMenu1 : MonoBehaviour
     public void QuitMaze()
     {
         Debug.Log("Quit Game");
+        Application.Quit();
     }
 }
